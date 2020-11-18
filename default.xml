@@ -1,0 +1,29 @@
+<manifest>
+	<remote name="github" fetch="https://github.com" />
+	<default revision="master"
+           remote="github"
+           sync-j="4" />
+
+<project name="ArtemZaiats/AOSP_TestApp" path="TestApp" />
+
+<project 
+	name="hmkcode/Android" 
+	path="Android" 
+	revision="fdb63651643a0fd1170541f3d9c8778a303516b9" />
+
+<project 
+	name="angular/angular-seed" 
+	path="Angular" 
+	revision="move-bower" />
+
+<project 
+	name="ingadhoc/project" 
+	path="SomeProject" 
+	revision="13.0">
+		<copyfile src="CONTRIBUTING.md" dest="DownloadedProject/CONTRIBUTING.md" />
+		<copyfile src="LICENSE" dest="DownloadedProject/license/LICENSE" />
+		<copyfile src="oca_dependencies.txt" dest="DownloadedProject/oca_dependencies.txt" />
+		<linkfile src="project_ux/models/project_project.py" dest="DownloadedProject/project_project.py" />
+	</project>
+	
+</manifest>
